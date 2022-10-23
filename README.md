@@ -29,3 +29,6 @@ finally I am setting cron to clean up the resources automatically everyday at 11
 ```shell
 26 11 * * * ./cleanup-aws-resources.sh
 ```
+
+cloud nuke also support excluding region/resource type so that cloud-nuke will not delete those resources.
+I am exluding us-east-1 region and AWS resource type IAM, as I dont want them to be deleted.
